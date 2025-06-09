@@ -1,12 +1,15 @@
 // api/index.js
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
-const cors = require('cors');
+const express = require("express");
+const fs = require("fs");
+const path = require("path");
+const cors = require("cors");
+const mongoose = require("mongoose"); // ✅ Add mongoose
+require("dotenv").config(); // ✅ Load env variables
+
 //routes
-const deviceRoutes = require('./devices');
-const userRoutes = require('./users');
-const employeesRoutes = require('./employees');
+const deviceRoutes = require("./devices");
+const userRoutes = require("./users");
+const employeesRoutes = require("./employees");
 
 const app = express();
 
@@ -16,14 +19,26 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use('/devices', deviceRoutes);
-app.use('/users', userRoutes);
-app.use('/employees', employeesRoutes);
+app.use("/devices", deviceRoutes);
+app.use("/users", userRoutes);
+app.use("/employees", employeesRoutes);
+
+const MONGODB_URI = process.env.MONGODB_URI; // Change DB name as needed
 
 // Fallback
-app.use('*', (req, res) => {
-  res.status(404).json({ message: 'Route not found' });
+app.use("*", (req, res) => {
+  res.status(404).json({ message: "Route not found" });
 });
+mongoose
+  .connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("✅ Connected to MongoDB"))
+  .catch((err) => {
+    console.error("❌ MongoDB connection error:", err.message);
+    process.exit(1);
+  });
 
 // ✅ Export for Vercel
 module.exports = app;
