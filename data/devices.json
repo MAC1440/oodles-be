@@ -1,0 +1,109 @@
+[
+  {
+    "id": "1",
+    "model": "MacBook Pro 16 M2",
+    "screenSize": 16,
+    "processor": "Apple M2 Pro",
+    "ram": 32,
+    "availableLocations": [
+      "Ireland",
+      "EU"
+    ],
+    "status": "available",
+    "user": {}
+  },
+  {
+    "id": "2",
+    "model": "Dell XPS 13",
+    "screenSize": 13.3,
+    "processor": "Intel Core i7 12th Gen",
+    "ram": 16,
+    "availableLocations": [
+      "UK",
+      "Ireland"
+    ],
+    "status": "available",
+    "user": {}
+  },
+  {
+    "id": "3",
+    "model": "Lenovo ThinkPad X1 Carbon",
+    "screenSize": 14,
+    "processor": "Intel Core i5 11th Gen",
+    "ram": 8,
+    "availableLocations": [
+      "UK"
+    ],
+    "status": "available",
+    "user": {}
+  },
+  {
+    "id": "4",
+    "model": "HP EliteBook 840 G9",
+    "screenSize": 14,
+    "processor": "Intel Core i7 12th Gen",
+    "ram": 8,
+    "availableLocations": [
+      "UK",
+      "EU"
+    ],
+    "status": "available",
+    "user": {}
+  },
+  {
+    "id": "5",
+    "model": "Microsoft Surface Laptop 5",
+    "screenSize": 13.5,
+    "processor": "Intel Core i7 12th Gen",
+    "ram": 8,
+    "availableLocations": [
+      "UK",
+      "EU"
+    ],
+    "status": "available",
+    "user": {}
+  },
+  {
+    "id": "6",
+    "model": "Asus ZenBook 14",
+    "screenSize": 14,
+    "processor": "AMD Ryzen 7 5800U",
+    "ram": 4,
+    "availableLocations": [
+      "UK"
+    ],
+    "status": "available",
+    "user": {}
+  },
+  {
+    "id": "7",
+    "model": "MacBook Air 15 M2",
+    "screenSize": 15,
+    "processor": "Apple M2",
+    "ram": 16,
+    "availableLocations": [
+      "Ireland"
+    ],
+    "status": "available",
+    "user": {}
+  },
+  {
+    "id": "8",
+    "model": "Acer Swift X",
+    "screenSize": 14,
+    "processor": "AMD Ryzen 7 5800U",
+    "ram": 16,
+    "availableLocations": [
+      "UK",
+      "Ireland",
+      "EU"
+    ],
+    "status": "in use",
+    "user": {
+      "name": "Ahmed",
+      "role": "Developer",
+      "location": "UK",
+      "assignedAt": "2025-06-09T12:01:26.606Z"
+    }
+  }
+]

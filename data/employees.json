@@ -1,0 +1,28 @@
+[
+  {
+    "id": "96752097-b9f6-4708-bd25-1718138a553c",
+    "name": "Ahmed",
+    "role": "Developer",
+    "location": "UK",
+    "assignedDevice": {
+      "id": "8",
+      "model": "Acer Swift X",
+      "screenSize": 14,
+      "processor": "AMD Ryzen 7 5800U",
+      "ram": 16,
+      "availableLocations": [
+        "UK",
+        "Ireland",
+        "EU"
+      ],
+      "status": "in use",
+      "user": {
+        "name": "Ahmed",
+        "role": "Developer",
+        "location": "UK",
+        "assignedAt": "2025-06-09T12:01:26.606Z"
+      }
+    },
+    "createdAt": "2025-06-09T12:01:26.607Z"
+  }
+]

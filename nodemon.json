@@ -1,0 +1,7 @@
+{
+    "watch": ["api"],
+    "ext": "js,json",
+    "ignore": ["data/db.json"],
+    "exec": "node api/index.js"
+  }
+  
